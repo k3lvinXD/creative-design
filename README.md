@@ -14,24 +14,23 @@ Abre http://localhost:3000. Para probar localmente no necesitas instalar depende
 
 También puedes abrir `dist/index.html` directamente, pero el ranking compartido y la lectura de algunas fotos para compartir requieren el servidor local o HTTPS.
 
-## Editar productos
+## Editar desde Visual Studio Code
 
-Busca `catalog-data` en `dist/index.html`. Cada producto está separado en varias líneas para editarlo cómodamente:
+Los cambios se realizan en la carpeta `C:\Users\KIMC\Desktop\creative-design`, que es tu copia de trabajo. GitHub es una copia remota: actualizar GitHub no modifica automáticamente una carpeta descargada como ZIP. En este chat editaremos también la copia del Escritorio cuando tengamos acceso.
 
-```json
-{
-  "id": "producto-1",
-  "name": "Llavero personalizado",
-  "price": 150,
-  "category": "Llaveros",
-  "image": "imagenes/llavero.jpg",
-  "example": false
-}
-```
+- `dist/productos.js`: nombres, precios, categorías, fotos y `example`.
+- `dist/logo.svg`: logo de rompecabezas adaptado de la referencia, sin deformaciones ni sombras.
+- `dist/styles.css`: colores, tamaños y distribución.
+- `dist/app.js`: carrito, WhatsApp y ranking.
+- `dist/index.html`: inicio.
+- `dist/catalogo.html`: todos los productos.
+- `dist/mas-vendidos.html`: ranking.
+- `dist/personalizados.html`: pedidos personalizados.
+- Las categorías tienen sus propias páginas: `llaveros.html`, `figuras.html`, `impresiones-3d.html`, `papeleria.html` y `broches.html`.
 
-Coloca esa foto en `dist/imagenes/llavero.jpg`. Conserva el identificador `id` de cada producto para no perder su historial. El servidor admite solo productos existentes con nombre y `example: false`. Las fichas vacías y ejemplos no suman estadísticas. El producto incluido sigue marcado como ejemplo: desmárcalo cuando pongas un producto real.
+Para una foto, crea `dist/imagenes/llavero.jpg` y escribe `"image": "imagenes/llavero.jpg"` en el producto de `productos.js`. Cambia `price` por un número, por ejemplo `150`. Conserva cada `id` para no perder estadísticas. Desmarca el ejemplo con `"example": false` cuando sea un producto real.
 
-Guarda y actualiza el navegador. También existe el editor al pie de la página: guarda únicamente un borrador en ese navegador. La descarga debe reemplazar `dist/index.html` y subirse a GitHub para publicar cambios. Un cambio en los datos del código deja de aplicar borradores anteriores. Los productos añadidos solo en un borrador no cuentan hasta estar publicados en el servidor.
+Ya no hay editor público ni borradores del catálogo en el navegador. Guarda con Ctrl+S y actualiza la página con F5. Todas las páginas comparten el mismo archivo de productos y el carrito. El símbolo SVG conserva el motivo y los colores de la referencia; para usar el logo original exacto puedes sustituirlo por tu archivo de marca y cambiar `src="logo.svg"` en las páginas.
 
 ## Más vendidos automático
 
