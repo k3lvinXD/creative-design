@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title"><title id="title">Creative Design</title>
+<circle cx="100" cy="100" r="98" fill="white"/>
+<g stroke="#202020" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
+<path fill="#ff91a4" d="M62 21h42v15c14-8 14 17 0 10v17H88c8-14-17-14-10 0H62z"/>
+<path fill="#ffdc87" d="M104 21h42v42h-16c8 14-17 14-10 0h-16V46c14 7 14-18 0-10z"/>
+<path fill="#50b9e6" d="M104 63h16c-7 14 18 14 10 0h16v42h-42V89c-14 8-14-17 0-10z"/>
+<path fill="#ffe1a0" d="M48 77h15c-7-14 18-14 10 0h17v16c-14-8-14 17 0 10v16H48v-16c-14 7-14-18 0-10z" transform="rotate(-19 69 98)"/>
+</g><g fill="#111" text-anchor="middle" font-family="Impact, Arial Narrow, sans-serif" font-weight="900"><text x="100" y="151" font-size="26" textLength="104" lengthAdjust="spacingAndGlyphs">Creative</text><text x="100" y="178" font-size="26" textLength="84" lengthAdjust="spacingAndGlyphs">Design</text></g></svg>
